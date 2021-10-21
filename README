@@ -1,0 +1,40 @@
+Draghici Maria-Ana 312CA
+
+		Am creat cate o functie pentru fiecare tip de comanda. Am citit
+	primul cuvant pentru a identifica ce comanda este si am apelat functia
+	corespunzatoare, urmand ca in functie sa citesc datele ramase.
+		Pentru fiecare functie am tratat cazurile de erori, atat cele date
+	in cerinta, cat si cele de alocare de memorie.
+		Functia de adaugare a planetei am facut-o ca adaugare a unui nod
+	intr-o lista pe pozitia data, iar lista de scuturi a planetei respec-
+	tive este creata prin accesarea de numarul de scuturi ori a unei
+	functii ce adauga un scut la sfarsitul listei de scuturi cu o valoare
+	data. Am procedat astfel pentru a ma putea folosi de functia aceasta si
+	pentru functia EXP, doar schimband valoarea scutului din 1 in valoarea
+	ce-i trebuie data scutului creat.
+		Functia BLH am implementat-o astfel incat sa stearga planeta si sa
+	dea free la memoria utilizata. Acesta functie am folosit-o si pentru a da
+	free la toata lista de planete la sfarsit, motiv pentru care am creat si o
+	variabila care sa fie 1 atunci cand functia blh e accesata din linia de
+	comanda, pentru a afisa erorile caracteristice functiei; cand variabila
+	este 0 inseamna ca blh a fost accesata dintr-o alta functie doar pentru a
+	sterge si elimina, deci erorile specifice functiei nu sunt afisate.
+		Functia UPG am implementat-o astfel incat sa citeasca efectiv indicii
+	planetei si ai scutului ce urmeaza sa fie upgradat si i-am schimbat va-
+	loarea.
+		Pentru functia de RMV am folosit functia de stergere a unui nod dintr-o
+	lista circulara dublu inlantuita si i-am dat free nodului sters.
+		Pentru functia COL am taratat cazurile cand a explodat prima planeta,
+	cand a explodat cea de-a doua si ambele. Pentru cand explodeaza ambele
+	planete, am sters-o pe prima, utilizand functia blh, iar apoi pe a doua,
+	dar am sters-o de la idndexul ei - 1, intrucat planeta1 a fost stearsa,
+	deci inseamna ca planeta2 a fost decalata cu o pozitie inainte(se stie
+	ca sunt vecine).
+		Pentru functia ROT, pur si simplu am schimbat head-ul listei de scuturi
+	a planetei de la indicele cerut cu atatea unitati cate s-au dat si in sen-
+	sul acelor de ceasornic sau in sens trigonometric.
+		Pentru functia SHW am tratat cazurile cand exista o singura planeta in
+	galaxie, cand exista doua si cand exista mai multe. In functie de fiecare
+	caz, afisez cele cerute.
+		La sfarsitul programului am eliberat memoria folosita.
+
